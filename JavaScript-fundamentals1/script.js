@@ -130,6 +130,8 @@ switch (language) {
 console.log(population > 33 ? `${country}'s population is above average` : `${country}'s population is below average`);
 
 
+
+//Challenge 1, 2
 const massMark = 78;
 const heightMark = 1.69;
 const massJohn = 92;
@@ -152,3 +154,29 @@ if (markHigherBMI) {
 } else {
     console.log(`John's BMI(${BMIJohn}) is higher than Mark's(${BMIMark})!`);
 }
+
+
+//Challenge 3
+
+
+let scoreDolphins = (96 + 108 + 89) / 3;
+let scoreKoalas = (88 + 91 + 110) / 3;
+
+if (scoreDolphins > scoreKoalas) {
+    console.log("Dolphins win the trophy");
+} else if (scoreDolphins < scoreKoalas) {
+    console.log("Koalas win the trophy");
+} else if (scoreDolphins === scoreKoalas) {
+    console.log("Both win the trophy");
+}
+
+//Challenge 4
+
+let tip;
+const bill = 275;
+
+((bill > 50) && (bill < 300)) ? tip = (15 / 100) * bill : tip = (20 / 100) * bill;
+
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+
+
