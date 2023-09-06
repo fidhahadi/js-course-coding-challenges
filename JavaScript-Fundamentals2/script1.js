@@ -109,3 +109,24 @@ console.log(myCountry.population);
 
 // wrongggg...........myCountry['describe'] = describe;
 console.log(myCountry.checkIsland);
+
+
+//Challenge 1 
+
+const calcAverage = (score1, score2, score3) => {
+    return (score1 + score2 + score3) / 3;
+}
+let scoreDolphins = calcAverage(44, 23, 71);
+let scoreKoalas = calcAverage(65, 54, 49);
+
+const checkWinner = (scoreDolphins, scoreKoalas) => {
+    if (scoreDolphins > scoreKoalas && scoreDolphins === 2 * scoreKoalas) {
+        console.log(`Dolphins win ( ${scoreDolphins} vs. ${scoreKoalas})`);
+    } else if (scoreDolphins < scoreKoalas && scoreKoalas === 2 * scoreDolphins) {
+        console.log(`Koalas win ( ${scoreKoalas} vs. ${scoreDolphins})`);
+    }
+    else if (scoreDolphins === scoreKoalas) {
+        console.log("No team wins ...");
+    }
+    return;
+}
