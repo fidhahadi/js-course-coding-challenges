@@ -115,18 +115,19 @@ console.log(myCountry.checkIsland);
 
 const calcAverage = (score1, score2, score3) => {
     return (score1 + score2 + score3) / 3;
-}
+};
 let scoreDolphins = calcAverage(44, 23, 71);
 let scoreKoalas = calcAverage(65, 54, 49);
 
-const checkWinner = (scoreDolphins, scoreKoalas) => {
-    if (scoreDolphins > scoreKoalas && scoreDolphins === 2 * scoreKoalas) {
-        console.log(`Dolphins win ( ${scoreDolphins} vs. ${scoreKoalas})`);
-    } else if (scoreDolphins < scoreKoalas && scoreKoalas === 2 * scoreDolphins) {
-        console.log(`Koalas win ( ${scoreKoalas} vs. ${scoreDolphins})`);
+const checkWinner = (avgDolphins, avgKoalas) => {
+    if (avgDolphins > avgKoalas && avgDolphins === 2 * avgKoalas) {
+        console.log(`Dolphins win ( ${avgDolphins} vs. ${avgKoalas})`);
+    } else if (avgDolphins < avgKoalas && avgKoalas === 2 * avgDolphins) {
+        console.log(`Koalas win ( ${avgKoalas} vs. ${avgDolphins})`);
     }
-    else if (scoreDolphins === scoreKoalas) {
-        console.log("No team wins ...");
+    else if (avgDolphins === avgKoalas) {
+        console.log("No team wins...");
     }
-    return;
-}
+};
+console.log(checkWinner(scoreDolphins, scoreKoalas));
+
