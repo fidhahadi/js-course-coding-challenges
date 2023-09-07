@@ -131,3 +131,88 @@ const checkWinner = (avgDolphins, avgKoalas) => {
 };
 console.log(checkWinner(scoreDolphins, scoreKoalas));
 
+//Arrays
+
+const friends = ['Bob', 'Adam', 'Eve'];
+console.log(friends[2]);
+const newlength = friends.push('Jay');//returns new length of the array
+console.log(newlength);
+
+//Challenge 2 
+
+const calcTip = (bill) => {
+    let tip;
+    ((bill > 50) && (bill < 300)) ? tip = (15 / 100) * bill : tip = (20 / 100) * bill;
+    return tip;
+}
+
+calcTip(100);
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(tips);
+console.log(totals);
+
+
+//Objects
+
+const jonas = {
+    firstName: "Jonas",
+    lastName: "Rafeeque",
+    birthYear: 1995,
+    job: "teacher",
+    friends: ['Michael', 'Steve', 'Bob'],
+    hasDriversLicense: true,
+    calcAge: function () {
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+    hasLicence: function () {
+        if (this.hasDriversLicense) {
+            return "a";
+        } else {
+            return "no";
+        }
+    }
+};
+
+const name1 = 'Name';
+console.log(jonas['first' + name1]);
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is ${jonas.friends[0]}`);
+
+
+//Object Methods
+
+console.log(`${jonas.firstName} is a ${jonas.calcAge()} year old ${jonas.job} and he has ${jonas.hasLicence()} drivers license`);
+
+//Challenge 3 
+const mark = {
+    // firstName: "Mark",
+    // lastName: "Miller",
+    fullName: "Mark Miller",
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        this.bmi = (this.mass) / (this.height * this.height);
+        return mark.bmi;
+
+    }
+};
+const john = {
+    // firstName: "John",
+    // lastName: "Smith",
+    fullName: "John Smith",
+    mass: 92,
+    height: 1.95,
+    calcBMI: function () {
+        this.bmi = (this.mass) / (this.height * this.height);
+        return john.bmi;
+
+    }
+};
+console.log(john.calcBMI());
+
+((john.calcBMI() > mark.calcBMI())) ? console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})!`) : console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})!`);
+
+
+
