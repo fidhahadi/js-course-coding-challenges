@@ -216,3 +216,60 @@ console.log(john.calcBMI());
 
 
 
+for (let rep = 24; rep <= 100; rep++) {
+    console.log("Lifting weights repetition " + rep);
+}
+
+
+//Looping through arrays
+
+const jonasArray = [
+    'Jonas',
+    'smith',
+    2037 - 1991,
+    'teacher',
+    ['Michael', 'Steve', 'Bob']
+];
+
+const types = [];
+
+for (let i = 0; i < jonasArray.length; i++) {
+    console.log(jonasArray[i]);
+    types[i] = typeof jonasArray[i];
+    console.log(types);
+}
+
+
+
+//Challenge 4
+
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+// const tips = [];
+// const totals = [];
+
+// const calcTip = (bill) => {
+//     let tip;
+//     ((bill > 50) && (bill < 300)) ? tip = (15 / 100) * bill : tip = (20 / 100) * bill;
+//     return tip;
+// }
+
+// for (let i = 0; i < 10; i++) {
+//     tips.push(calcTip(bills[i]));
+// }
+// console.log(tips);
+// for (let j = 0; j < 10; j++) {
+//     totals.push((bills[j] + tips[j]));
+// }
+// console.log(totals);
+
+
+//while loop
+//dice rolls
+
+let dice = Math.trunc(Math.random() * 6 + 1);
+
+while (dice !== 6) {
+    console.log(`You rolled ${dice}`)
+    dice = Math.trunc(Math.random() * 6 + 1);
+}
+

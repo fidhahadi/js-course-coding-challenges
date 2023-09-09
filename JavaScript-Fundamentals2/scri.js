@@ -15,4 +15,7 @@ const checkWinner = (avgDolphins, avgKoalas) => {
     }
 };
 checkWinner(scoreDolphins, scoreKoalas);
-console.log(750 / 4)
+console.log(750 / 4);
+
+
+
