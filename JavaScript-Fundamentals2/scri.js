@@ -18,4 +18,3 @@ checkWinner(scoreDolphins, scoreKoalas);
 console.log(750 / 4);
 
 
-
