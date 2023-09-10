@@ -297,3 +297,14 @@ const calcAmplitude = function (t1, t2) {
 
 const amplitudeNew = calcAmplitude([3, 5, 6, 7, 9, 18], [23, 54, 67, 8, 7, 34, 56]);
 console.log(amplitudeNew);
+
+//Problem 2 - Coding challenge 1
+//Exapmle : [17,21,23] will print "...17 in 1 days...21 in 2 days...23 in 3 days"
+
+const printForecast = function (arr) {
+    for (let i = 0; i < arr.length; i++) {
+        console.log(`...${arr[i]} in ${i + 1} days`);
+    }
+}
+
+printForecast([17, 21, 23]);
