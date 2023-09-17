@@ -308,3 +308,32 @@ const printForecast = function (arr) {
 }
 
 printForecast([17, 21, 23]);
+
+
+//coding ninjas
+// function reverseInPlace(str) {
+//     var words = [];
+//     words = str.split("\s+");
+//     var result = "";
+//     for (var i = 0; i < words.length; i++) {
+//         return result += words[i].split('').reverse().join('');
+//     }
+// }
+// console.log(reverseInPlace("Hello world"))
+
+
+//split function in javascript
+
+let str = 'Hello world how are you';
+let splitted = str.split(' ');
+let reversed = splitted.reverse();
+let stringed = String(reversed);
+let newstr = stringed.replaceAll(',', ' ');
+console.log(newstr);
+
+
+//optimized solution
+let str1 = String(str.split(" ").reverse()).replaceAll(',', ' ');
+console.log(str1);
+
+
